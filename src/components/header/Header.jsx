@@ -1,6 +1,14 @@
-export default function header(){
+import './Header.css';
+import { Link } from 'react-router-dom';
+function Header(){
     return(
-        <h1>DevGnan</h1>
-    );
-
+    <>
+        <Link className='links' to={"/"} >Home</Link>
+        <Link className='links' to={"/login"}>Login</Link>
+        <Link className='links' to={"/searchpage"}>Search Page</Link>
+    </>
+     
+    )
 }
+
+export default Header;
