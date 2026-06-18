@@ -1,12 +1,12 @@
+import { MacbookScroll } from "./components/ui/macbook-scroll"
 
-import header from './components/Header/Header.jsx';
 
 
 function App() {
   
   return (
     <>
-    {header()};
+    {MacbookScroll()};
     </>
   )
 }
