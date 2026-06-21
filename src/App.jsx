@@ -1,8 +1,10 @@
-import { MacbookScroll } from "./components/ui/macbook-scroll";
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SearchPage from "./pages/SearchPagx";
+import { Notch } from './components/ui/notch';
+import { useState } from 'react';
 
 
 
@@ -10,21 +12,19 @@ import SearchPage from "./pages/SearchPagx";
 
 
 function App() {
+
   
-  // return (
-  //   <>
-  //   {MacbookScroll()};
-  //   </>
-  // )
-  return(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/home" element={<HomePage />}></Route>
-        <Route path="/login" element={<LoginPage/> }></Route>
-        <Route path="/searchpage" element={<SearchPage/> }></Route>
-      </Routes>
-    </BrowserRouter>
+ 
+  return (
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<HomePage />}></Route>
+    //     <Route path="/home" element={<HomePage />}></Route>
+    //     <Route path="/login" element={<LoginPage/> }></Route>
+    //     <Route path="/searchpage" element={<SearchPage/> }></Route>
+    //   </Routes>
+    // </BrowserRouter>
+
   )
 
 

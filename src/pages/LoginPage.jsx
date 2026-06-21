@@ -1,11 +1,22 @@
+import { useState } from "react";
 import Header from "../components/header/Header";
 
-function LoginPage(){
-    return(
+function LoginPage() {
+
+    let [userName, setuserName] = useState("");
+
+    function handleChange(event) {
+        userName = event.target.value;
+        console.log(userName);
+    }
+
+    return (
         <>
         <Header/>
-        <h1>Hello This is Login Page</h1>
+        <input onChange={handleChange} />
+        <input onChange={handleChange}/>
         </>
-    )
+       
+    );
 }
 export default LoginPage;
