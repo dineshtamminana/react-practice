@@ -5,7 +5,8 @@ function Header(){
     <>
         <Link className='links' to={"/"} >Home</Link>
         <Link className='links' to={"/login"}>Login</Link>
-        <Link className='links' to={"/searchpage"}>Search Page</Link>
+        <Link className='links' to={"/searchpage"}>Search Page</Link>     
+        {/* use arrays  */}
     </>
      
     )
